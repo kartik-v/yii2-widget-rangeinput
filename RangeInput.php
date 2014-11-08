@@ -19,7 +19,7 @@ use yii\helpers\Html;
  * @since 1.0
  * @see http://twitter.github.com/typeahead.js/examples
  */
-class RangeInput extends \kartik\form\Html5Input
+class RangeInput extends \kartik\base\Html5Input
 {
     public $type = 'range';
     public $orientation;
