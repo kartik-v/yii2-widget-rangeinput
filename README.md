@@ -1,11 +1,11 @@
 yii2-widget-rangeinput
 ======================
 
-[![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-widget-rangeinput/v/stable.svg)](https://packagist.org/packages/kartik-v/yii2-widget-rangeinput)
-[![License](https://poser.pugx.org/kartik-v/yii2-widget-rangeinput/license.svg)](https://packagist.org/packages/kartik-v/yii2-widget-rangeinput)
-[![Total Downloads](https://poser.pugx.org/kartik-v/yii2-widget-rangeinput/downloads.svg)](https://packagist.org/packages/kartik-v/yii2-widget-rangeinput)
-[![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-widget-rangeinput/d/monthly.png)](https://packagist.org/packages/kartik-v/yii2-widget-rangeinput)
-[![Daily Downloads](https://poser.pugx.org/kartik-v/yii2-widget-rangeinput/d/daily.png)](https://packagist.org/packages/kartik-v/yii2-widget-rangeinput)
+[![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-widget-rangeinput/v/stable)](https://packagist.org/packages/kartik-v/yii2-widget-rangeinput)
+[![License](https://poser.pugx.org/kartik-v/yii2-widget-rangeinput/license)](https://packagist.org/packages/kartik-v/yii2-widget-rangeinput)
+[![Total Downloads](https://poser.pugx.org/kartik-v/yii2-widget-rangeinput/downloads)](https://packagist.org/packages/kartik-v/yii2-widget-rangeinput)
+[![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-widget-rangeinput/d/monthly)](https://packagist.org/packages/kartik-v/yii2-widget-rangeinput)
+[![Daily Downloads](https://poser.pugx.org/kartik-v/yii2-widget-rangeinput/d/daily)](https://packagist.org/packages/kartik-v/yii2-widget-rangeinput)
 
 The RangeInput widget is a customized range slider control widget based on HTML5 range input. The widget enhances the default HTML range input with various features including the following:
 
