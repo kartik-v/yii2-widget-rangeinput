@@ -27,11 +27,11 @@ class RangeInput extends \kartik\base\Html5Input
     /**
      * @inherit doc
      */
-    public function init() {
+    public function run() {
         if ($this->orientation == 'vertical') {
             Html::addCssClass($this->containerOptions, 'kv-range-vertical');
             $this->html5Options['orient'] = 'vertical';
         }
-        parent::init();
+        parent::run();
     }
 }
