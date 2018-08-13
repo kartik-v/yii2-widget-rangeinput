@@ -1,7 +1,8 @@
 yii2-widget-rangeinput
 ======================
 
-[![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-widget-rangeinput/v/stable)](https://packagist.org/packages/kartik-v/yii2-widget-rangeinput)
+[![Stable Version](https://poser.pugx.org/kartik-v/yii2-widget-rangeinput/v/stable)](https://packagist.org/packages/kartik-v/yii2-widget-rangeinput)
+[![Unstable Version](https://poser.pugx.org/kartik-v/yii2-widget-rangeinput/v/unstable)](https://packagist.org/packages/kartik-v/yii2-widget-rangeinput)
 [![License](https://poser.pugx.org/kartik-v/yii2-widget-rangeinput/license)](https://packagist.org/packages/kartik-v/yii2-widget-rangeinput)
 [![Total Downloads](https://poser.pugx.org/kartik-v/yii2-widget-rangeinput/downloads)](https://packagist.org/packages/kartik-v/yii2-widget-rangeinput)
 [![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-widget-rangeinput/d/monthly)](https://packagist.org/packages/kartik-v/yii2-widget-rangeinput)
@@ -9,7 +10,7 @@ yii2-widget-rangeinput
 
 The RangeInput widget is a customized range slider control widget based on HTML5 range input. The widget enhances the default HTML range input with various features including the following:
 
-* Specially styled for Bootstrap 3.0 with customizable caption showing the output of the control.
+* Specially styled for Bootstrap 3.x and Bootstrap 4.x with customizable caption showing the output of the control.
 * Ability to prepend and append addons (very useful to show the min and max ranges, and the slider measurement unit).
 * Allow the input to be changed both via the control or the text box.
 * Automatically degrade to normal text input for unsupported Internet Explorer versions.
@@ -34,9 +35,9 @@ or add
 
 to the ```require``` section of your `composer.json` file.
 
-## Latest Release
+## Release Changes
 
-> NOTE: The latest version of the module is v1.0.1 released on 22-Nov-2015. Refer the [CHANGE LOG](https://github.com/kartik-v/yii2-widget-rangeinput/blob/master/CHANGE.md) for details.
+Refer the [CHANGE LOG](https://github.com/kartik-v/yii2-widget-rangeinput/blob/master/CHANGE.md) for details on various releases and changes.
 
 ## Demo
 
@@ -47,19 +48,27 @@ You can refer detailed [documentation and demos](http://demos.krajee.com/widget-
 ```php
 use kartik\range\RangeInput;
 
-// Usage with ActiveForm and model
+// Usage with rangeinput and model
 echo $form->field($model, 'rating')->widget(RangeInput::classname(), [
     'options' => ['placeholder' => 'Select range ...'],
     'html5Options' => ['min'=>0, 'max'=>1, 'step'=>1],
     'addon' => ['append'=>['content'=>'star']]
 ]);
 
-// With model & without ActiveForm
+// With model & without rangeinput
 echo '<label class="control-label">Adjust Contrast</label>';
 echo RangeInput::widget([
     'model' => $model,
     'attribute' => 'contrast',
     'addon' => ['append'=>['content'=>'%']]
+]);
+
+// Vertical orientation
+echo '<label class="control-label">Adjust Contrast</label>';
+echo RangeInput::widget([
+    'name' => 'slider',
+    'value' => 70,
+    'orientation' => 'vertical'
 ]);
 ```
 

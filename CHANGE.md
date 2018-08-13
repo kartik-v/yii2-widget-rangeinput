@@ -1,6 +1,13 @@
 Change Log: `yii2-widget-rangeinput`
 ====================================
 
+## Version 1.0.2
+
+**Date:** 13-Aug-2018
+
+- Update to include Bootstrap 4.x support
+- Reorganize source code into `src` directory
+
 ## Version 1.0.1
 
 **Date:** 22-Nov-2015

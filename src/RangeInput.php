@@ -1,10 +1,10 @@
 <?php
 
 /**
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2018
  * @package yii2-widgets
  * @subpackage yii2-widget-rangeinput
- * @version 1.0.1
+ * @version 1.0.2
  */
 
 namespace kartik\range;
@@ -21,17 +21,25 @@ use yii\helpers\Html;
  */
 class RangeInput extends \kartik\base\Html5Input
 {
+    /**
+     * @var string the HTML5 input type
+     */
     public $type = 'range';
+    
+    /**
+     * @var string the orientation of the range input. If set to `vertical` will orient the range 
+     * sliders vertically - else will display the sliders horizontally.
+     */
     public $orientation;
     
     /**
-     * @inherit doc
+     * @inheritdoc
      */
     public function run() {
         if ($this->orientation == 'vertical') {
             Html::addCssClass($this->containerOptions, 'kv-range-vertical');
             $this->html5Options['orient'] = 'vertical';
         }
-        parent::run();
+        return parent::run();
     }
 }
